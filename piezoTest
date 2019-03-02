@@ -1,0 +1,25 @@
+
+
+#define PIEZO_PIN 0
+#define NOTE_C        // 261 note C in Hz
+#define NOTE_D        // 293 note D in Hz   
+#define NOTE_E        // 329 note E in Hz
+#define NOTE_F        // 349 note F in Hz
+#define NOTE_G        // 392 note G in Hz
+
+
+void setup()
+{
+pinmode(PIEZO_PIN, OUTPUT);
+}
+
+void loop()
+{
+    int frequency = 261; 
+    int duration = 2000; 
+    
+    tone(PIEZO_PIN, frequency, duration);       //frequency of tone in Hz, duration of the tone in milliseconds
+
+}
+
+//tone(PIEZO_PIN, frequency);    
